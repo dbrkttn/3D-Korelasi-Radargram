@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPR 3D Radargram</title>
+    <style>
+        body { 
+            margin: 0; 
+            /* Background changed to sky blue */
+            background-color: skyblue; 
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+            /* Ensuring the viewer itself reflects the background */
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+
+    <model-viewer src="H8.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" shadow-softness="0.7" camera-orbit="-704.1deg 70.05deg 1143m" field-of-view="22.98deg">
+    <button class="Hotspot" slot="hotspot-1" data-position="305.0131715624427m 58.31163375055262m 225.59279105679528m" data-normal="0.6958602346344585m 2.1756911976194302e-7m 0.7181772301141476m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML27</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="286.4652814843314m 58.12279043561825m 238.80571294568986m" data-normal="0.7208310064597651m 2.099753552983612e-7m 0.6931108570251647m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML27A</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="270.4148562017648m 58.14022686224731m 250.92456166966113m" data-normal="0.5635910726889538m 2.502499659970149e-7m 0.8260539345498281m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML27B</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="255.9200578392086m 58.97738688373765m 147.1321988735373m" data-normal="0.5187406819850371m 2.5899835867111993e-7m 0.8549316375322834m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML28A</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="229.30946418247026m 59.082899677217085m 176.08535637574008m" data-normal="0.7406910471374857m 2.0353318397534216e-7m 0.6718457953208711m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML28</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="179.73361810875872m 58.74306502210972m 108.91903004446694m" data-normal="0.8477896926343613m 1.606622795340562e-7m 0.5303325721308371m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML29</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="104.82586948780107m 61.46727552568722m 80.23924826070136m" data-normal="0.7355468695178634m 2.0523817891546644e-7m 0.6774738391572247m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML30</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="83.75760049841129m 63.110488074105724m -19.1301323183779m" data-normal="0.8442704981170878m 1.6235414459278226e-7m 0.5359172753411652m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML31
+        </div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="38.54958955338275m 64.70297326258435m -98.99311717142159m" data-normal="0.6446212896558007m 2.3160305326478927e-7m 0.7645020555383999m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML32</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="8.326931882075314m 64.95553514302578m -57.035303099801496m" data-normal="0.9793149149483324m -6.129876533144696e-8m -0.202342030630655m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML32A</div>
+    </button><button class="Hotspot" slot="hotspot-11" data-position="-52.181047201006095m 66.04146335041305m -115.99724108606537m" data-normal="0.5510721342682506m 2.527958281975421e-7m 0.8344576099676791m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML33</div>
+    </button><button class="Hotspot" slot="hotspot-12" data-position="-84.90543802541552m 66.09995625156792m -82.72727761572554m" data-normal="0.5236565858441693m 2.580888557636902e-7m 0.851929445495319m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML33A</div>
+    </button><button class="Hotspot" slot="hotspot-13" data-position="-117.89909647255044m 70.0619822188841m -163.01006478582363m" data-normal="0.8316190030154181m 1.6824018285100834e-7m 0.5553465889186803m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML34</div>
+    </button><button class="Hotspot" slot="hotspot-14" data-position="-146.49438462443217m 69.12867374545206m -126.58882130054977m" data-normal="0.8550651268873762m 1.5708389124526316e-7m 0.5185206155796032m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ML34A</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        
+    </button>
+    <div id="ar-prompt">
+        <img src="">
+    </div>
+</model-viewer>
+
+
+
+</body>
+</html>
